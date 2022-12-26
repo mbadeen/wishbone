@@ -10,10 +10,6 @@ body {
   font-family: var(--default-font);
 }
 
-img {
-  width: 100%;
-}
-
 @media (min-width: 600px) {
   html {
     font-size: 106.25%;

@@ -1,3 +1,6 @@
 .main {
-    min-height: 100vh;
+  background-color: var(--black-04);
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
 }

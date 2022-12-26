@@ -1,9 +1,32 @@
-/* @font-face {
-  font-family: 'roboto-regular';
-  src: url('../assets/fonts/roboto-regular.ttf') format('truetype');
-} */
+@font-face {
+  font-family: "gruppo";
+  src: url("../assets/fonts/gruppo.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("../assets/fonts/montserrat.ttf") format("truetype");
+}
 
 :root {
-    --headings-font: helvetica, arial, sans-serif;
-    --default-font: helvetica, arial, sans-serif;
-  }
+  --headings-font: gruppo, helvetica, arial, sans-serif;
+  --body-font: montserrat, helvetica, arial, sans-serif;
+}
+
+p {
+  color: var(--white);
+  font-family: var(--body-font);
+  text-align: center;
+  padding: 0 1rem;
+}
+
+p:first-child {
+  padding-bottom: 1rem;
+}
+
+h1 {
+  color: var(--burgundy);
+  font-family: var(--headings-font);
+  font-size: 3rem;
+  font-weight: 600;
+}
