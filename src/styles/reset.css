@@ -1,0 +1,33 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+body {
+  font-family: var(--default-font);
+}
+
+img {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: 106.25%;
+  }
+}
+
+@media (min-width: 900px) {
+  html {
+    font-size: 112.5%;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 118.75%;
+  }
+}

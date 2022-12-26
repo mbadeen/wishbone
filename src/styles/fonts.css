@@ -1,0 +1,9 @@
+/* @font-face {
+  font-family: 'roboto-regular';
+  src: url('../assets/fonts/roboto-regular.ttf') format('truetype');
+} */
+
+:root {
+    --headings-font: helvetica, arial, sans-serif;
+    --default-font: helvetica, arial, sans-serif;
+  }

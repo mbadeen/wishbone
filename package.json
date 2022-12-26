@@ -1,17 +1,19 @@
 {
-  "name": "eat-impasto",
-  "version": "wishbone",
+  "name": "wishbone",
+  "description": "website for wishbone broasted chicken restaurant",
+  "version": "1.0.0",
   "main": "index.js",
   "repository": "git+https://github.com/mbadeen/wishbone.git",
   "private": true,
-  "scripts": {
-    "dev": "gatsby develop",
-    "build": "gatsby build"
-  },
   "dependencies": {
     "gatsby": "^5.3.3",
     "gatsby-cli": "^5.3.1",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop"
   }
 }
