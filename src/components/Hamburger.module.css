@@ -1,0 +1,82 @@
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  outline: none;
+  padding: 0;
+  width: 34px;
+  height: 26px;
+}
+
+.span {
+  background-color: var(--white);
+  height: 2px;
+  width: 100%;
+}
+
+.topOpen,
+.bottomOpen,
+.topClose,
+.bottomClose {
+  animation-fill-mode: forwards;
+  animation-duration: 0.3s;
+}
+
+.topOpen {
+  animation-name: rotateLeft;
+}
+
+.bottomOpen {
+  animation-name: rotateRight;
+}
+
+.topClose {
+  animation-name: resetTop;
+}
+
+.bottomClose {
+  animation-name: resetBottom;
+}
+
+@keyframes rotateLeft {
+  from {
+    transform: rotate(initial) translateY(initial);
+  }
+
+  to {
+    transform: translateY(6.5px) rotate(45deg);
+  }
+}
+
+@keyframes rotateRight {
+  from {
+    transform: rotate(initial) translateY(initial);
+  }
+
+  to {
+    transform: translateY(-6.5px) rotate(-45deg);
+  }
+}
+
+@keyframes resetTop {
+  from {
+    transform: translateY(6.5px) rotate(-180deg);
+  }
+
+  to {
+    transform: rotate(initial) translateY(initial);
+  }
+}
+
+@keyframes resetBottom {
+  from {
+    transform: translateY(-6.5px) rotate(-180deg);
+  }
+
+  to {
+    transform: rotate(initial) translateY(initial);
+  }
+}

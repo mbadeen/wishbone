@@ -1,11 +1,8 @@
 :root {
-  --black-01: #000;
-  --black-02: #141414;
-  --black-03: #6d6d6d;
-  --black-04: #282828;
-  --black-05: #bcbec0;
-  --black-06: #191919;
   --white: #fff;
-  --burgundy: #722f37;
-  --yellow: #fefeaf;
+  --wishbone-gray: #333;
+  --wishbone-blue: #bbdde6;
+  --wishbone-red: #8c141e;
+  --wishbone-yellow-1: #ffe5c0;
+  --wishbone-yellow-2: #f7c878;
 }

@@ -1,6 +1,4 @@
 .main {
-  background-color: var(--black-03);
   display: grid;
   min-height: 100vh;
-  place-items: center;
 }

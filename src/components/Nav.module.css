@@ -1,0 +1,25 @@
+.nav {
+  display: grid;
+  gap: 2rem;
+  grid-template-rows: repeat(4, auto);
+  margin: auto;
+  padding: 2rem;
+}
+
+.link {
+  color: var(--white);
+  font-family: var(--alt-font);
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.link:hover,
+.link_active {
+  color: var(--black-03);
+}
+
+.link_active {
+  cursor: default;
+}

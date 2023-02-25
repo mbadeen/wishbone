@@ -1,0 +1,33 @@
+.container,
+.open,
+.close {
+  background-color: var(--wishbone-gray);
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 1rem;
+  position: fixed;
+  right: 0;
+  top: 4rem;
+  transition: all 0.5s ease;
+  z-index: 200;
+}
+
+.open {
+  visibility: visible;
+  width: 100%;
+}
+
+.close {
+  visibility: hidden;
+  width: 0;
+}
+
+@media (min-width: 600px) {
+  .container,
+  .open,
+  .close {
+    padding: 2rem;
+  }
+}

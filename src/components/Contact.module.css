@@ -1,0 +1,11 @@
+.section {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+}
+
+.anchor {
+  color: var(--white);
+  text-decoration: none;
+  white-space: nowrap;
+}

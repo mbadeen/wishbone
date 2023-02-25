@@ -1,0 +1,28 @@
+.header,
+.link {
+  display: flex;
+}
+
+.header {
+  align-items: center;
+  background-color: var(--wishbone-gray);
+  box-shadow: 0 1px 8px 0 rgb(0 0 0 / 20%), 0 3px 4px 0 rgb(0 0 0 / 14%),
+    0 3px 3px -2px rgb(0 0 0 / 12%);
+  height: 4rem;
+  justify-content: space-between;
+  padding: 0 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+}
+
+.img {
+  width: 2.75rem;
+}
+
+@media (min-width: 600px) {
+  .header {
+    padding: 0 2rem;
+  }
+}

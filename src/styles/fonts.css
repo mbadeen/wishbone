@@ -14,18 +14,11 @@
 }
 
 p {
-  color: var(--white);
   font-family: var(--body-font);
-  text-align: center;
-  padding: 0 1rem;
-}
-
-p:first-child {
-  padding-bottom: 1rem;
 }
 
 h1 {
-  color: var(--burgundy);
+  color: var(--wishbone-red);
   font-family: var(--headings-font);
   font-size: 3rem;
   font-weight: 600;

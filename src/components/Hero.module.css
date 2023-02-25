@@ -1,0 +1,18 @@
+.header {
+  background-color: var(--wishbone-gray);
+  display: grid;
+  height: 100vh;
+  padding: 8rem 1rem 4rem;
+  place-items: center;
+}
+
+.img {
+  object-fit: contain;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .header {
+    padding: 8rem 2rem 4rem;
+  }
+}

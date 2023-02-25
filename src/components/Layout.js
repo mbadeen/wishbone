@@ -1,16 +1,14 @@
 import { node, string } from "prop-types";
 
-
+import MainHeader from "./MainHeader";
 
 import { main } from "./Layout.module.css";
 
 const Layout = ({ pageTitle, children }) => (
   <>
     <title>{pageTitle}</title>
-    <main className={main}>
-      {children}
-    </main>
-
+    <MainHeader />
+    <main className={main}>{children}</main>
   </>
 );
 
