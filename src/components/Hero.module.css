@@ -1,5 +1,20 @@
 .header {
-  background-color: var(--wishbone-gray);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(51, 51, 51, 1) 100%
+  );
+  /* background: radial-gradient(
+    circle,
+    rgba(140, 20, 30, 1) 0%,
+    rgba(51, 51, 51, 1) 100%
+  ); */
+  /* background: linear-gradient(
+    45deg,
+    rgba(140, 20, 30, 1) 0%,
+    rgba(51, 51, 51, 1) 100%
+  ); */
+  background-color: var(--wishbone-red);
   display: grid;
   height: 100vh;
   padding: 8rem 1rem 4rem;
@@ -7,8 +22,7 @@
 }
 
 .img {
-  object-fit: contain;
-  width: 100%;
+  max-width: 90rem;
 }
 
 @media (min-width: 600px) {

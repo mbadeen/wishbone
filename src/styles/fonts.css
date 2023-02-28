@@ -1,19 +1,21 @@
 @font-face {
-  font-family: "gruppo";
-  src: url("../assets/fonts/gruppo.ttf") format("truetype");
+  font-family: "lf-regular";
+  src: url("../assets/fonts/libre-franklin-400.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "montserrat";
-  src: url("../assets/fonts/montserrat.ttf") format("truetype");
+  font-family: "lr-bold";
+  src: url("../assets/fonts/libre-franklin-700.ttf") format("truetype");
 }
 
 :root {
-  --headings-font: gruppo, helvetica, arial, sans-serif;
-  --body-font: montserrat, helvetica, arial, sans-serif;
+  --headings-font: lr-bold, helvetica, arial, sans-serif;
+  --body-font: lf-regular, helvetica, arial, sans-serif;
 }
 
-p {
+p,
+a {
+  color: var(--wishbone-gray);
   font-family: var(--body-font);
 }
 

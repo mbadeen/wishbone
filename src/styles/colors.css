@@ -1,7 +1,16 @@
 :root {
-  --white: #fff;
-  --wishbone-gray: #333;
+  --gray-01: #474747;
+  --gray-02: #5b5b5b;
+  --gray-03: #707070;
+  --gray-04: #848484;
+  --gray-05: #999;
+  --gray-06: #adadad;
+  --gray-07: #c1c1c1;
+  --gray-08: #d6d6d6;
+  --gray-09: #eaeaea;
+
   --wishbone-blue: #bbdde6;
+  --wishbone-gray: #333;
   --wishbone-red: #8c141e;
   --wishbone-yellow-1: #ffe5c0;
   --wishbone-yellow-2: #f7c878;

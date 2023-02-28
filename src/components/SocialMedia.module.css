@@ -4,3 +4,7 @@
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
 }
+
+.img {
+  width: 2.5rem;
+}
