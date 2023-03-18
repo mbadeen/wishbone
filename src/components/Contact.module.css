@@ -5,6 +5,7 @@
 }
 
 .anchor {
+  color: var(--gray-05);
   text-decoration: none;
   white-space: nowrap;
 }

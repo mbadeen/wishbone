@@ -1,4 +1,4 @@
-import hero from "../assets/images/logo1-red.svg";
+import hero from "../assets/images/logo1-white.svg";
 
 import { header, img } from "./Hero.module.css";
 

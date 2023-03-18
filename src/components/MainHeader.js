@@ -5,7 +5,7 @@ import { Link } from "gatsby";
 import Hamburger from "./Hamburger";
 import NavMenu from "./NavMenu";
 
-import logo from "../assets/images/logo5-gray.svg";
+import logo from "../assets/images/logo5-white.svg";
 
 import { header, link, img } from "./MainHeader.module.css";
 

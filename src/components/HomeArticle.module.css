@@ -1,0 +1,14 @@
+.article {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.h1 {
+  padding-bottom: 2.5rem;
+}
+
+.p {
+  max-width: 50em;
+}

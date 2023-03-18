@@ -1,0 +1,27 @@
+.footer,
+.section {
+  display: grid;
+}
+
+.footer {
+  background-color: var(--wishbone-red);
+  gap: 8rem;
+  grid-template-rows: 1fr auto;
+  padding: 10rem 1rem 2rem;
+}
+
+.img {
+  margin: auto;
+  max-width: 50rem;
+}
+
+@media (min-width: 600px) {
+  .footer {
+    padding: 10rem 2rem 2rem;
+  }
+
+  .section {
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}

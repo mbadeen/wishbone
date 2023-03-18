@@ -4,24 +4,28 @@
 }
 
 @font-face {
-  font-family: "lr-bold";
-  src: url("../assets/fonts/libre-franklin-700.ttf") format("truetype");
+  font-family: "barlow-condensed";
+  src: url("../assets/fonts/barlow-condensed.ttf") format("truetype");
 }
 
 :root {
-  --headings-font: lr-bold, helvetica, arial, sans-serif;
+  --headings-font: barlow-condensed, helvetica, arial, sans-serif;
   --body-font: lf-regular, helvetica, arial, sans-serif;
 }
 
 p,
-a {
-  color: var(--wishbone-gray);
+a,
+address {
+  color: var(--gray-09);
   font-family: var(--body-font);
+  font-size: 1.25rem;
+  font-style: normal;
 }
 
 h1 {
-  color: var(--wishbone-red);
+  color: var(--wishbone-yellow-2);
   font-family: var(--headings-font);
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 600;
+  text-transform: uppercase;
 }
