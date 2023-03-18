@@ -19,7 +19,9 @@
 
 .topOpen,
 .bottomOpen,
+.middleOpen,
 .topClose,
+.middleClose,
 .bottomClose {
   animation-fill-mode: forwards;
   animation-duration: 0.3s;
@@ -27,6 +29,10 @@
 
 .topOpen {
   animation-name: rotateLeft;
+}
+
+.middleOpen {
+  animation-name: removeMiddle;
 }
 
 .bottomOpen {
@@ -47,7 +53,7 @@
   }
 
   to {
-    transform: translateY(6.5px) rotate(45deg);
+    transform: translateY(8.5px) rotate(45deg);
   }
 }
 
@@ -57,13 +63,25 @@
   }
 
   to {
-    transform: translateY(-6.5px) rotate(-45deg);
+    transform: translateY(-8.5px) rotate(-45deg);
+  }
+}
+
+@keyframes removeMiddle {
+  from {
+    opacity: 1;
+    transform: translateY(initial);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(-8.5px);
   }
 }
 
 @keyframes resetTop {
   from {
-    transform: translateY(6.5px) rotate(-180deg);
+    transform: translateY(8.5px) rotate(-180deg);
   }
 
   to {
@@ -73,7 +91,7 @@
 
 @keyframes resetBottom {
   from {
-    transform: translateY(-6.5px) rotate(-180deg);
+    transform: translateY(-8.5px) rotate(-180deg);
   }
 
   to {
