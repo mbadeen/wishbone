@@ -1,0 +1,16 @@
+.div {
+  border-bottom: 1px solid var(--wishbone-yellow-2);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem 0;
+}
+
+.dd,
+.dt {
+  color: var(--gray-09);
+  font-family: var(--body-font);
+}
+
+.dd {
+  justify-self: flex-end;
+}

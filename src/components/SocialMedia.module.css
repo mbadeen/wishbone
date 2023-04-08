@@ -5,6 +5,10 @@
   place-items: center;
 }
 
+.anchor {
+  height: 2.5rem;
+}
+
 .img {
   width: 2.5rem;
 }

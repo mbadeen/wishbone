@@ -22,6 +22,10 @@ address {
   font-style: normal;
 }
 
+p {
+  line-height: 2rem;
+}
+
 h1 {
   color: var(--wishbone-yellow-2);
   font-family: var(--headings-font);

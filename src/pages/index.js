@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 import { parallax, visualNavSection, welcomeSection } from "./Home.module.css";
 import VisualNav from "../components/VisualNav";
 
-import chicken from "../assets/images/chicken.png";
+// import chicken from "../assets/images/chicken.png";
 
 const Home = () => (
   <Layout pageTitle="Wishbone Broasted Chicken">
@@ -16,10 +16,11 @@ const Home = () => (
     </section>
     <div className={parallax} />
     <section className={visualNavSection}>
-      <VisualNav caption="Check out our menu!" imgSrc={chicken} to="#" />
-      <VisualNav caption="Place your order online!" imgSrc={chicken} to="#" />
-      <VisualNav caption="We offer catering!" imgSrc={chicken} to="#" />
+      <VisualNav caption="Check out our menu!" to="#" />
+      <VisualNav caption="Place your order online!" to="#" />
+      <VisualNav caption="We offer catering!" to="#" />
     </section>
+    <div className={parallax} />
   </Layout>
 );
 

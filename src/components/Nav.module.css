@@ -7,7 +7,7 @@
 }
 
 .link {
-  color: var(--gray-07);
+  color: var(--gray-09);
   font-size: 2rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -16,7 +16,7 @@
 
 .link:hover,
 .link_active {
-  color: var(--wishbone-yellow-1);
+  color: var(--wishbone-yellow-2);
 }
 
 .link:hover {
