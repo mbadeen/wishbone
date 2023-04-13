@@ -3,21 +3,35 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 auto;
+  max-width: 45rem;
+  position: relative;
 }
 
 .img {
-  max-width: 85rem;
-  min-width: 40rem;
-  padding: 4rem;
-  position: absolute;
+  max-width: 20rem;
+  /* min-width: 30rem; */
+  /* padding: 4rem; */
+  /* position: absolute; */
   transform: rotate(-22.5deg);
-  z-index: 125;
+  z-index: 50;
 }
 
-.h1 {
-  padding-bottom: 2.5rem;
-}
-
+.h1,
 .p {
-  max-width: 45em;
+  padding-bottom: 2.5rem;
+  position: relative;
+  z-index: 100;
+}
+/* 
+.h1,
+.p {
+  padding-bottom: 2.5rem;
+} */
+
+@media (min-width: 900px) {
+  .img {
+    /* left: 0; */
+    /* left: -10rem; */
+  }
 }

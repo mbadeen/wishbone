@@ -34,7 +34,7 @@ const hoursOfOperation = [
 const OperationalHours = () => (
   <dl>
     {hoursOfOperation.map(({ day, hours }) => (
-      <div className={div}>
+      <div key={day} className={div}>
         <dt className={dt}>{day}</dt>
         <dd className={dd}>{hours}</dd>
       </div>

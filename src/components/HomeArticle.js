@@ -1,21 +1,19 @@
 // import mascot from "../assets/images/mascot-light-gray.svg";
+import mascot from "../assets/images/mascot-red.svg";
+import { shape, string } from "prop-types";
+import { article, h1, img, p } from "./HomeArticle.module.css";
 
-import { article, img, h1, p } from "./HomeArticle.module.css";
-
-const HomeArticle = () => (
+const HomeArticle = ({ aboutTitle, aboutParagraph }) => (
   <article className={article}>
-    {/* <img className={img} src={mascot} alt="" /> */}
-    <h1 className={h1}>Welcome!</h1>
-    <p className={p}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. In pellentesque massa
-      placerat duis ultricies lacus sed turpis tincidunt. At augue eget arcu
-      dictum varius duis. Lorem ipsum dolor sit amet, consectetur adipiscing
-      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      In pellentesque massa placerat duis ultricies lacus sed turpis tincidunt.
-      At augue eget arcu dictum varius duis!
-    </p>
+    <h1 className={h1}>{aboutTitle}</h1>
+    <p className={p}>{aboutParagraph.aboutParagraph}</p>
+    <img className={img} src={mascot} alt="" />
   </article>
 );
+
+HomeArticle.propTypes = {
+  aboutTitle: string,
+  aboutParagraph: shape({ aboutParagraph: string }),
+};
 
 export default HomeArticle;
