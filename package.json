@@ -17,6 +17,7 @@
   },
   "scripts": {
     "build": "gatsby build",
+    "clean": "gatsby clean",
     "dev": "gatsby develop",
     "serve": "gatsby serve"
   }

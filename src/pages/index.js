@@ -1,12 +1,13 @@
 import { useStaticQuery, graphql } from "gatsby";
 
 import Hero from "../components/Hero";
-import HomeArticle from "../components/HomeArticle";
+import AboutSection from "../components/AboutSection";
 import Layout from "../components/Layout";
 
-import { parallax, visualNavSection, welcomeSection } from "./Home.module.css";
+import { parallax, visualNavSection } from "./Home.module.css";
 import VisualNav from "../components/VisualNav";
 
+// TODO: Add images for VisualNav once assets are available.
 // import chicken from "../assets/images/chicken.png";
 
 const Home = () => {
@@ -32,9 +33,7 @@ const Home = () => {
     <Layout pageTitle="Wishbone Broasted Chicken">
       <Hero />
       <div className={parallax} />
-      <section className={welcomeSection}>
-        <HomeArticle aboutTitle={aboutTitle} aboutParagraph={aboutParagraph} />
-      </section>
+      <AboutSection aboutTitle={aboutTitle} aboutParagraph={aboutParagraph} />
       <div className={parallax} />
       <section className={visualNavSection}>
         <VisualNav caption="Check out our menu!" to="#" />

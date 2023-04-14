@@ -1,0 +1,36 @@
+.section {
+  background-color: var(--wishbone-gray);
+  padding: 10rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.article {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 60rem;
+  position: relative;
+}
+
+.img {
+  left: -10rem;
+  max-width: 30rem;
+  position: absolute;
+  top: -5rem;
+  transform: rotate(-22.5deg);
+}
+
+.h1,
+.p {
+  padding-bottom: 2.5rem;
+  position: relative;
+  z-index: 100;
+}
+
+@media (min-width: 600px) {
+  .section {
+    padding: 10rem 2rem;
+  }
+}
