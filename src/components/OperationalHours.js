@@ -1,4 +1,4 @@
-import { div, dt, dd } from "./OperationalHours.module.css";
+import { div, dl, dt, dd } from "./OperationalHours.module.css";
 
 const hoursOfOperation = [
   {
@@ -32,7 +32,7 @@ const hoursOfOperation = [
 ];
 
 const OperationalHours = () => (
-  <dl>
+  <dl className={dl}>
     {hoursOfOperation.map(({ day, hours }) => (
       <div key={day} className={div}>
         <dt className={dt}>{day}</dt>

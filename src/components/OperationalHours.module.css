@@ -1,8 +1,11 @@
 .div {
-  border-bottom: 1px solid var(--wishbone-yellow-2);
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 1rem 0;
+  grid-template-columns: 8rem 1fr;
+  padding: 0.75rem 0;
+}
+
+.dl {
+  max-width: 22rem;
 }
 
 .dd,
@@ -13,4 +16,15 @@
 
 .dd {
   justify-self: flex-end;
+  white-space: nowrap;
+}
+
+@media (min-width: 600px) {
+  .div {
+    gap: 1rem;
+  }
+
+  .dl {
+    justify-self: center;
+  }
 }
