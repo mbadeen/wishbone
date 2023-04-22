@@ -16,13 +16,17 @@ const MainFooter = () => {
             address
             contactEmail
             googleMapsShareLink
+            operationalHours {
+              day
+              hours
+            }
           }
         }
       }
     }
   `);
 
-  const { address, contactEmail, googleMapsShareLink } =
+  const { address, contactEmail, googleMapsShareLink, operationalHours } =
     data.allContentfulHomePage.edges[0].node;
 
   return (
@@ -30,7 +34,7 @@ const MainFooter = () => {
       <section className={section}>
         <img className={img} src={logo} alt="" />
         <div className={container}>
-          <OperationalHours />
+          <OperationalHours operationalHours={operationalHours} />
           <Address
             address={address}
             contactEmail={contactEmail}

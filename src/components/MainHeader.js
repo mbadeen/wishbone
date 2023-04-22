@@ -14,11 +14,11 @@ const MainHeader = () => {
 
   return (
     <header className={header}>
-      <Link className={link} to="/">
+      <Link className={link} to="/" onClick={() => setIsOpen(false)}>
         <img className={img} src={logo} alt="" />
       </Link>
       <Hamburger isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
-      <NavMenu isOpen={isOpen} />
+      <NavMenu isOpen={isOpen} setIsOpen={() => setIsOpen(false)} />
     </header>
   );
 };

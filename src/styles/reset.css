@@ -6,6 +6,11 @@
   margin: 0;
 }
 
+*:focus {
+  outline: 2px dashed var(--wishbone-yellow-2);
+  outline-offset: 2px;
+}
+
 body {
   font-family: var(--default-font);
 }
