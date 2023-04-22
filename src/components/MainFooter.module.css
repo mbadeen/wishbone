@@ -26,6 +26,7 @@
 
 @media (min-width: 900px) {
   .container {
+    align-items: start;
     grid-template-columns: 1fr 1fr;
   }
 

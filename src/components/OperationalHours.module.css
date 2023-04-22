@@ -1,10 +1,14 @@
-.div {
+.div,
+.dl {
   display: grid;
+}
+
+.div {
   grid-template-columns: 8rem 1fr;
-  padding: 0.75rem 0;
 }
 
 .dl {
+  gap: 1rem;
   max-width: 22rem;
 }
 
