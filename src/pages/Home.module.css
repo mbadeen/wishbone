@@ -7,23 +7,3 @@
   background-size: cover;
   padding: 10rem 0;
 }
-
-.visualNavSection {
-  background-color: var(--wishbone-gray);
-  display: grid;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-@media (min-width: 600px) {
-  .visualNavSection {
-    gap: 2rem;
-    padding: 2rem;
-  }
-}
-
-@media (min-width: 900px) {
-  .visualNavSection {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}

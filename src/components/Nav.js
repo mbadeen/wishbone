@@ -6,9 +6,8 @@ import { link, link_active, nav } from "./Nav.module.css";
 const Nav = ({ setIsOpen }) => {
   const links = [
     { href: "/", label: "Home" },
-    { href: "/menu", label: "Menu" },
-    { href: "/catering", label: "Catering" },
-    { href: "/faqs", label: "FAQ" },
+    { href: "/menu", label: "Pickup" },
+    { href: "/catering", label: "Delivery" },
   ];
 
   return (

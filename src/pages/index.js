@@ -4,11 +4,8 @@ import Hero from "../components/Hero";
 import AboutSection from "../components/AboutSection";
 import Layout from "../components/Layout";
 
-import { parallax, visualNavSection } from "./Home.module.css";
-import VisualNav from "../components/VisualNav";
-
-// TODO: Add images for VisualNav once assets are available.
-// import chicken from "../assets/images/chicken.png";
+import { parallax } from "./Home.module.css";
+import VisualNavSection from "../components/VisualNavSection";
 
 const Home = () => {
   const data = useStaticQuery(graphql`
@@ -35,11 +32,7 @@ const Home = () => {
       <div className={parallax} />
       <AboutSection aboutTitle={aboutTitle} aboutParagraph={aboutParagraph} />
       <div className={parallax} />
-      <section className={visualNavSection}>
-        <VisualNav caption="Check out our menu!" to="#" />
-        <VisualNav caption="Place your order online!" to="#" />
-        <VisualNav caption="We offer catering!" to="#" />
-      </section>
+      <VisualNavSection />
       <div className={parallax} />
     </Layout>
   );

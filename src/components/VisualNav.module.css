@@ -3,13 +3,14 @@
   display: flex;
   overflow: hidden;
   position: relative;
+  min-height: 25rem;
 }
 
-.anchor::before {
+/* .anchor::before {
   content: "";
   padding-bottom: 100%;
   display: block;
-}
+} */
 
 .img,
 .overlay,
@@ -34,10 +35,11 @@
 }
 
 .p {
-  border-bottom: 1px solid transparent;
+  border-bottom: 3px solid transparent;
   color: var(--wishbone-blue);
   font-family: var(--headings-font);
-  font-size: 2rem;
+  font-size: 4rem;
+  line-height: 4.25rem;
   margin: auto;
   text-transform: uppercase;
 }
@@ -56,5 +58,5 @@
 
 .anchor:hover .p {
   color: var(--gray-01);
-  border-bottom: 1px solid var(--gray-01);
+  border-bottom: 3px solid var(--gray-01);
 }

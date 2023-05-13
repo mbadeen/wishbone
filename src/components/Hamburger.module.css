@@ -4,11 +4,13 @@
   cursor: pointer;
   display: flex;
   flex-direction: column;
+  height: 26px;
   justify-content: space-around;
   outline: none;
   padding: 0;
+  position: relative;
   width: 34px;
-  height: 26px;
+  z-index: 300;
 }
 
 .span {
