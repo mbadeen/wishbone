@@ -1,0 +1,27 @@
+.section {
+  background-color: var(--wishbone-gray);
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  height: 100vh;
+  place-content: center;
+}
+
+.link {
+  background-color: var(--wishbone-red);
+  color: var(--gray-09);
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+
+.img {
+  max-width: 30rem;
+}
+
+.article {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

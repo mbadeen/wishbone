@@ -8,11 +8,13 @@ const Nav = ({ setIsOpen }) => {
     { href: "/", label: "Home" },
     { href: "/catering", label: "Catering" },
     { href: "/events", label: "Events" },
-    { href: "/", label: "Order Online" },
   ];
 
   return (
     <nav className={nav}>
+      <a className={link} href="http://order.wishbonefamouschicken.com/">
+        Order Online
+      </a>
       {links.map(({ href, label }) => (
         <Link
           activeClassName={link_active}

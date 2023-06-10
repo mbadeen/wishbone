@@ -5,40 +5,33 @@
 
 .article {
   margin: 0 auto;
-  max-width: 75rem;
+  max-width: 60rem;
 }
 
 .img {
   border-radius: 50%;
   float: left;
-  margin: 1rem;
+  margin: 1.5rem;
   shape-outside: circle();
   transform: rotate(-22.5deg);
-  max-width: 11rem;
+  max-width: 10rem;
 }
 
 .h1 {
-  padding-bottom: 1.5rem;
   text-align: center;
 }
 
 .p {
-  display: inline;
+  display: block;
+  padding-top: 2rem;
 }
 
 @media (min-width: 600px) {
   .img {
-    margin: 2rem;
     max-width: 18rem;
   }
 
   .section {
     padding: 8rem 2rem;
-  }
-}
-
-@media (min-width: 900px) {
-  .img {
-    max-width: 24rem;
   }
 }
