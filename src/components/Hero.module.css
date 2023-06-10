@@ -1,7 +1,7 @@
 .header {
   background-color: var(--wishbone-red);
   display: grid;
-  height: 100vh;
+  height: calc(100vh - 4rem);
   padding: 4rem 2rem;
   place-items: center;
 }
