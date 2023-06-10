@@ -10,12 +10,12 @@ import { footer, container, img, section } from "./MainFooter.module.css";
 const MainFooter = () => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulHomePage {
+      allContentfulMainFooter {
         edges {
           node {
             address
-            contactEmail
-            googleMapsShareLink
+            email
+            googleMapsUrl
             operationalHours {
               day
               hours
@@ -26,8 +26,8 @@ const MainFooter = () => {
     }
   `);
 
-  const { address, contactEmail, googleMapsShareLink, operationalHours } =
-    data.allContentfulHomePage.edges[0].node;
+  const { address, email, googleMapsUrl, operationalHours } =
+    data.allContentfulMainFooter.edges[0].node;
 
   return (
     <footer className={footer}>
@@ -37,8 +37,8 @@ const MainFooter = () => {
           <OperationalHours operationalHours={operationalHours} />
           <Address
             address={address}
-            contactEmail={contactEmail}
-            googleMapsShareLink={googleMapsShareLink}
+            contactEmail={email}
+            googleMapsUrl={googleMapsUrl}
           />
         </div>
       </section>

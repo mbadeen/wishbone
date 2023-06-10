@@ -1,15 +1,34 @@
-import Layout from "../components/Layout";
+import { useStaticQuery, graphql } from "gatsby";
 
-import { h1, section } from "./Events.module.css";
+import Layout from "../components/Layout";
+import Section from "../components/Section";
 
 const Events = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allContentfulEventsPage {
+        edges {
+          node {
+            eventsPageMetaTitle
+            eventsPageTitle
+            eventsPageParagraph {
+              eventsPageParagraph
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const { eventsPageMetaTitle, eventsPageTitle, eventsPageParagraph } =
+    data.allContentfulEventsPage.edges[0].node;
+
   return (
-    <Layout pageTitle="Wishbone Events">
-      <section className={section}>
-        <header>
-          <h1 className={h1}>Upcoming Events</h1>
-        </header>
-      </section>
+    <Layout pageTitle={eventsPageMetaTitle}>
+      <Section
+        title={eventsPageTitle}
+        content={eventsPageParagraph.eventsPageParagraph}
+      />
     </Layout>
   );
 };

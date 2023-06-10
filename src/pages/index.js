@@ -1,7 +1,7 @@
 import { useStaticQuery, graphql } from "gatsby";
 
 import Hero from "../components/Hero";
-import AboutSection from "../components/AboutSection";
+import HomePageAboutSection from "../components/HomePageAboutSection";
 import Layout from "../components/Layout";
 
 import { parallax } from "./Home.module.css";
@@ -13,9 +13,10 @@ const Home = () => {
       allContentfulHomePage {
         edges {
           node {
-            aboutTitle
-            aboutParagraph {
-              aboutParagraph
+            homePageMetaTitle
+            homePageTitle
+            homePageParagraph {
+              homePageParagraph
             }
           }
         }
@@ -23,14 +24,17 @@ const Home = () => {
     }
   `);
 
-  const { aboutTitle, aboutParagraph } =
+  const { homePageMetaTitle, homePageTitle, homePageParagraph } =
     data.allContentfulHomePage.edges[0].node;
 
   return (
-    <Layout pageTitle="Wishbone Broasted Chicken">
+    <Layout pageTitle={homePageMetaTitle}>
       <Hero />
       <div className={parallax} />
-      <AboutSection aboutTitle={aboutTitle} aboutParagraph={aboutParagraph} />
+      <HomePageAboutSection
+        homePageTitle={homePageTitle}
+        homePageParagraph={homePageParagraph}
+      />
       <div className={parallax} />
       <VisualNavSection />
       <div className={parallax} />

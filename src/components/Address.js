@@ -4,7 +4,7 @@ import SocialMedia from "./SocialMedia";
 
 import { container, email, phone, streetAddress } from "./Address.module.css";
 
-const Address = ({ address, contactEmail, googleMapsShareLink }) => {
+const Address = ({ address, contactEmail, googleMapsUrl }) => {
   const splitAddress = address.split(".");
 
   return (
@@ -12,7 +12,7 @@ const Address = ({ address, contactEmail, googleMapsShareLink }) => {
       <address>
         <a
           className={streetAddress}
-          href={`${googleMapsShareLink}`}
+          href={`${googleMapsUrl}`}
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -34,7 +34,7 @@ const Address = ({ address, contactEmail, googleMapsShareLink }) => {
 Address.propTypes = {
   address: string,
   contactEmail: string,
-  googleMapsShareLink: string,
+  googleMapsUrl: string,
 };
 
 export default Address;

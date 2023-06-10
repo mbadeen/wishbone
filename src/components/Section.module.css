@@ -1,0 +1,21 @@
+.section {
+  background-color: var(--wishbone-gray);
+  height: calc(100vh - 4rem);
+  padding: 8rem 1rem;
+}
+
+.h1 {
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+.article {
+  margin: 0 auto;
+  max-width: 55rem;
+}
+
+@media (min-width: 600px) {
+  .section {
+    padding: 8rem 2rem;
+  }
+}

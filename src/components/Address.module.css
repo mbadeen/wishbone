@@ -16,19 +16,16 @@
 .streetAddress,
 .email,
 .phone {
+  color: var(--wishbone-yellow-2);
   font-size: 1rem;
   text-decoration: none;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .streetAddress:hover,
 .phone:hover,
 .email:hover {
-  text-decoration: underline;
-}
-
-.email {
-  color: var(--wishbone-yellow-2);
+  color: var(--gray-09);
 }
 
 @media (min-width: 600px) {
