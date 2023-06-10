@@ -3,8 +3,10 @@ import { useStaticQuery, graphql } from "gatsby";
 import Hero from "../components/Hero";
 import HomePageAboutSection from "../components/HomePageAboutSection";
 import Layout from "../components/Layout";
+import Parallax from "../components/Parallax";
 
-import { parallax } from "./Home.module.css";
+import chicken from "../assets/images/chicken.png";
+
 import VisualNavSection from "../components/VisualNavSection";
 
 const Home = () => {
@@ -30,14 +32,14 @@ const Home = () => {
   return (
     <Layout pageTitle={homePageMetaTitle}>
       <Hero />
-      <div className={parallax} />
+      <Parallax backgroundUrl={chicken} />
       <HomePageAboutSection
         homePageTitle={homePageTitle}
         homePageParagraph={homePageParagraph}
       />
-      <div className={parallax} />
+      <Parallax backgroundUrl={chicken} />
       <VisualNavSection />
-      <div className={parallax} />
+      <Parallax backgroundUrl={chicken} />
     </Layout>
   );
 };
