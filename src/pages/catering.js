@@ -1,5 +1,6 @@
 import { useStaticQuery, graphql } from "gatsby";
 
+import AltPageHero from "../components/AltPageHero";
 import Layout from "../components/Layout";
 import Section from "../components/Section";
 
@@ -25,6 +26,7 @@ const Catering = () => {
 
   return (
     <Layout pageTitle={cateringPageMetaTitle}>
+      <AltPageHero />
       <Section
         title={cateringPageTitle}
         content={cateringPageParagraph.cateringPageParagraph}

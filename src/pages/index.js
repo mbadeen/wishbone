@@ -1,6 +1,6 @@
 import { useStaticQuery, graphql } from "gatsby";
 
-import Hero from "../components/Hero";
+import HomePageHero from "../components/HomePageHero";
 import HomePageAboutSection from "../components/HomePageAboutSection";
 import Layout from "../components/Layout";
 import Parallax from "../components/Parallax";
@@ -31,7 +31,7 @@ const Home = () => {
 
   return (
     <Layout pageTitle={homePageMetaTitle}>
-      <Hero />
+      <HomePageHero />
       <Parallax backgroundUrl={chicken} />
       <HomePageAboutSection
         homePageTitle={homePageTitle}
