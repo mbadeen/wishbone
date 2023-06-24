@@ -14,7 +14,12 @@ const MainHeader = () => {
 
   return (
     <header className={header}>
-      <Link className={link} to="/" onClick={() => setIsOpen(false)}>
+      <Link
+        aria-label="Home Page Link"
+        className={link}
+        to="/"
+        onClick={() => setIsOpen(false)}
+      >
         <img className={img} src={logo} alt="" />
       </Link>
       <Hamburger isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />

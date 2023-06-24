@@ -1,16 +1,11 @@
 .header {
-  /* background: linear-gradient(
-    180deg,
-    rgba(140, 20, 30, 1) 0%,
-    rgba(51, 51, 51, 1) 100%
-  ); */
   background-color: var(--wishbone-red);
   display: grid;
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
   place-items: center;
 }
 
 .img {
-  max-width: 60rem;
+  max-width: 90rem;
   z-index: 150;
 }
