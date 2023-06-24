@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import AltPageHero from "../components/AltPageHero";
 import Layout from "../components/Layout";
 import Section from "../components/Section";
+import Seo from "../components/SEO";
 
 const Events = () => {
   const data = useStaticQuery(graphql`
@@ -36,3 +37,5 @@ const Events = () => {
 };
 
 export default Events;
+
+export const Head = () => <Seo />;

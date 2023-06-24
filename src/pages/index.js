@@ -4,6 +4,7 @@ import HomePageHero from "../components/HomePageHero";
 import HomePageAboutSection from "../components/HomePageAboutSection";
 import Layout from "../components/Layout";
 import Parallax from "../components/Parallax";
+import Seo from "../components/SEO";
 
 import chicken from "../assets/images/chicken.png";
 
@@ -45,3 +46,5 @@ const Home = () => {
 };
 
 export default Home;
+
+export const Head = () => <Seo />;
