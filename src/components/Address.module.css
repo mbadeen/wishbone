@@ -6,6 +6,7 @@
 
 .container {
   gap: 2rem;
+  justify-self: center;
   max-width: 20rem;
 }
 
@@ -26,10 +27,4 @@
 .phone:hover,
 .email:hover {
   color: var(--gray-09);
-}
-
-@media (min-width: 600px) {
-  .container {
-    justify-self: center;
-  }
 }
