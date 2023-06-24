@@ -10,7 +10,6 @@ const SEO = ({ description, pathname, children }) => {
 
   return (
     <>
-      <title>{seo.title}</title>
       <meta name="description" content={seo.description} />
       {children}
     </>

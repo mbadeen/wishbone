@@ -7,6 +7,7 @@ import logo from "../assets/images/logo3-white.svg";
 
 import { footer, container, img, section } from "./MainFooter.module.css";
 
+// TODO: Add 'email' property back under address property
 const MainFooter = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -14,7 +15,6 @@ const MainFooter = () => {
         edges {
           node {
             address
-            email
             googleMapsUrl
             operationalHours {
               day
@@ -26,7 +26,8 @@ const MainFooter = () => {
     }
   `);
 
-  const { address, email, googleMapsUrl, operationalHours } =
+  // TODO: Add 'email' property back
+  const { address, googleMapsUrl, operationalHours } =
     data.allContentfulMainFooter.edges[0].node;
 
   return (
@@ -37,7 +38,7 @@ const MainFooter = () => {
           <OperationalHours operationalHours={operationalHours} />
           <Address
             address={address}
-            contactEmail={email}
+            // contactEmail={email}
             googleMapsUrl={googleMapsUrl}
           />
         </div>
