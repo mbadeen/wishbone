@@ -1,6 +1,7 @@
 import { useStaticQuery, graphql } from "gatsby";
 
 import AltPageHero from "../components/AltPageHero";
+import CateringMenu from "../components/CateringMenu";
 import Layout from "../components/Layout";
 import Section from "../components/Section";
 import Seo from "../components/SEO";
@@ -32,6 +33,7 @@ const Catering = () => {
         title={cateringPageTitle}
         content={cateringPageParagraph.cateringPageParagraph}
       />
+      <CateringMenu />
     </Layout>
   );
 };

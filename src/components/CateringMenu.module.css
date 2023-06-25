@@ -1,0 +1,16 @@
+.section {
+  display: flex;
+  background-color: var(--wishbone-gray);
+  padding: 0 1rem 8rem;
+}
+
+.img {
+  margin: auto;
+  max-width: 60rem;
+}
+
+@media (min-width: 600px) {
+  .section {
+    padding: 0 2rem 8rem;
+  }
+}

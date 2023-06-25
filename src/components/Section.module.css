@@ -1,6 +1,5 @@
 .section {
   background-color: var(--wishbone-gray);
-  height: calc(100vh - 4rem);
   padding: 8rem 1rem;
 }
 

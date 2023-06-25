@@ -12,9 +12,6 @@ const Nav = ({ setIsOpen }) => {
 
   return (
     <nav className={nav}>
-      <a className={link} href="http://order.wishbonefamouschicken.com/">
-        Order Online
-      </a>
       {links.map(({ href, label }) => (
         <Link
           activeClassName={link_active}
@@ -26,6 +23,9 @@ const Nav = ({ setIsOpen }) => {
           {label}
         </Link>
       ))}
+      <a className={link} href="http://order.wishbonefamouschicken.com/">
+        Order Online
+      </a>
     </nav>
   );
 };
