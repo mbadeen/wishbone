@@ -10,7 +10,7 @@ const VisualNavSection = () => (
   <section className={section}>
     <VisualNavExternal
       caption="Order Online!"
-      href="http://order.wishbonefamouschicken.com/"
+      href="http://wishbone-108424.square.site/"
     />
     <VisualNav caption="Catering" to="/catering" />
     <VisualNav caption="Upcoming Events" to="/events" />

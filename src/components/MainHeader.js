@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 
 import Hamburger from "./Hamburger";
 import NavMenu from "./NavMenu";
+import OrderLink from "./OrderLink";
 
 import logo from "../assets/images/logo5-white.svg";
 
@@ -22,6 +23,7 @@ const MainHeader = () => {
       >
         <img className={img} src={logo} alt="" />
       </Link>
+      <OrderLink />
       <Hamburger isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
       <NavMenu isOpen={isOpen} setIsOpen={() => setIsOpen(false)} />
     </header>

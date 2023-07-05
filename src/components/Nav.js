@@ -23,7 +23,7 @@ const Nav = ({ setIsOpen }) => {
           {label}
         </Link>
       ))}
-      <a className={link} href="http://order.wishbonefamouschicken.com/">
+      <a className={link} href="http://wishbone-108424.square.site/">
         Order Online
       </a>
     </nav>
