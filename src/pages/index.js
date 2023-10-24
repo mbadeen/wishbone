@@ -6,7 +6,7 @@ import Layout from "../components/Layout";
 import Parallax from "../components/Parallax";
 import Seo from "../components/SEO";
 
-import chicken from "../assets/images/chicken.png";
+import smorg from "../assets/images/smorg.png";
 
 import VisualNavSection from "../components/VisualNavSection";
 
@@ -33,14 +33,14 @@ const Home = () => {
   return (
     <Layout pageTitle={homePageMetaTitle}>
       <HomePageHero />
-      <Parallax backgroundUrl={chicken} />
+      <Parallax backgroundUrl={smorg} />
       <HomePageAboutSection
         homePageTitle={homePageTitle}
         homePageParagraph={homePageParagraph}
       />
-      <Parallax backgroundUrl={chicken} />
+      <Parallax backgroundUrl={smorg} />
       <VisualNavSection />
-      <Parallax backgroundUrl={chicken} />
+      <Parallax backgroundUrl={smorg} />
     </Layout>
   );
 };
