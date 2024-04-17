@@ -1,5 +1,6 @@
 .section {
   display: flex;
+  flex-direction: column;
   background-color: var(--wishbone-gray);
   padding: 0 1rem 8rem;
 }
